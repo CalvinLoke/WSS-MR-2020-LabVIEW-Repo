@@ -1,0 +1,113 @@
+Old accel profile:
+if (xSpeed <= xTarget)
+xSpeed += accel;
+
+if (ySpeed <= yTarget)
+ySpeed += accel;
+
+if (wSpeed <= wTarget)
+wSpeed += accel;
+
+if (xSpeed > xTarget)
+xSpeed -= accel;
+
+if (ySpeed > yTarget)
+ySpeed -= accel;
+
+if (xSpeed > wTarget)
+wSpeed -= accel;
+
+
+wall follow:
+if (move == 1)
+{
+xSpeed = 0;
+ySpeed = 0.4;
+wSpeed = 0;
+
+if (Lsensor < 15)
+{
+ySpeed = 0;
+xSpeed = 0;
+wSpeed =- 0.1;
+}
+
+if (Lsensor > 15)
+{
+ySpeed = 0;
+xSpeed = 0;
+wSpeed = 0.1;
+}
+}
+else if (move == 0)
+{
+xSpeed = 0;
+ySpeed = 0;
+wSpeed =0;
+}
+
+Accel profile v1: 
+if (ySpeed <= yTarget)
+Vy += 0.005;
+
+if (ySpeed > yTarget)
+Vy -= 0.005;
+
+if (ySpeed == yTarget && yTarget == 0)
+Vy = 0;
+
+if(xSpeed <= xTarget)
+Vx += 0.005;
+
+if (xSpeed > xTarget)
+Vx -= 0.005;
+
+if ((xSpeed == xTarget && Vx != 0) || xTarget == 0)
+Vx = 0;
+
+if (wSpeed <= wTarget)
+Vw += 0.005;
+
+if (wSpeed > wTarget)
+Vw -= 0.005;
+
+if (wSpeed == wTarget || wTarget == 0)
+Vw = 0;
+
+Acceleration profile ver2:
+if (ySpeed <= yTarget && ySpeed < 1.5)
+Vy += accel;
+
+if (ySpeed > yTarget || ySpeed > 1.5)
+Vy -= accel;
+
+if (ySpeed == yTarget && yTarget == 0)
+Vy = 0;
+
+if(xSpeed <= xTarget)
+Vx += accel;
+
+if (xSpeed > xTarget)
+Vx -= accel;
+
+if ((xSpeed == xTarget && Vx != 0) || xTarget == 0)
+Vx = 0;
+
+if (wSpeed <= wTarget)
+Vw += accel;
+
+if (wSpeed > wTarget)
+Vw -= accel;
+
+if (wTarget == wSpeed && wSpeed == 0)
+Vw = 0;
+
+if (enc == 1)
+{
+Vx = 0;
+Vy = 0;
+Vw = 0;
+}
+
+
+
