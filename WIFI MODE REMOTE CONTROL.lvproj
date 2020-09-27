@@ -82,7 +82,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -269,6 +269,7 @@ AddOutputFilter chunkFilter
 				<Item Name="IO Manager.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/IO Manager.vi"/>
 				<Item Name="IRQ Type.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IRQ Type.ctl"/>
 				<Item Name="Is FPGA Ref Available.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Is FPGA Ref Available.vi"/>
+				<Item Name="IVA Add Offset to Matches.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Add Offset to Matches.vi"/>
 				<Item Name="IVA Append VI Name to GUID.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Append VI Name to GUID.vi"/>
 				<Item Name="IVA Clear Coordsys Errors.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Clear Coordsys Errors.vi"/>
 				<Item Name="IVA Get Alternate Path.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Get Alternate Path.vi"/>
@@ -278,6 +279,7 @@ AddOutputFilter chunkFilter
 				<Item Name="IVA Shape Match 2.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Shape Match 2.vi"/>
 				<Item Name="IVA Store Color Location Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Color Location Results.vi"/>
 				<Item Name="IVA Store Match Geometric Pattern Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Match Geometric Pattern Results.vi"/>
+				<Item Name="IVA Store Match Pattern Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Match Pattern Results.vi"/>
 				<Item Name="IVA Store Shape Matching Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Shape Matching Results.vi"/>
 				<Item Name="Lock Mutex.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Lock Mutex.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
@@ -400,7 +402,6 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Control.ctl" Type="VI" URL="../Underlying VI&apos;s/Elasped Timer/Control.ctl"/>
-			<Item Name="Elapsed Timer.vi" Type="VI" URL="../Underlying VI&apos;s/Elapsed Timer.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="MD2_FPGATarget_MD2FPGA_xulgQMGQvuI.lvbitx" Type="Document" URL="../../../../../../../Downloads/Studica Toolkit 4.0.0.4/MD2_FPGATarget_MD2FPGA_xulgQMGQvuI.lvbitx"/>
 			<Item Name="New motor Control integrated remodeled.vi" Type="VI" URL="../Experimental VI&apos;s/Underlying VI&apos;s/Movement control/New motor Control integrated remodeled.vi"/>
@@ -423,23 +424,23 @@ AddOutputFilter chunkFilter
 			<Item Name="States for Action Engine.ctl" Type="VI" URL="../../Labview Training Phase 2/Enum Controls/States for Action Engine.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="TLB Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
+			<Item Name="TLB All Tasks" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{66784B63-CE21-4D4D-A4FD-D3A739294536}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{54FF768D-E095-4C25-AEE8-ECE9CE166EA1}</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{1D3EB52F-B604-4BCF-A2B7-9DC05DD73F7D}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{13623D1D-BFFE-43C0-9B31-D940D8657B46}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{9359B19F-D087-4C43-AF79-A4733541CFA0}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">TLB Application</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{B37EB98D-377F-4E7B-A56F-7DBEC83669C4}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">TLB All Tasks</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/TLB Application</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/TLB All Tasks</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{5BB9380A-79A2-4C0A-9ABD-DF42AA31028E}</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{4C0EF6A3-7C95-4B29-810E-2E467A15FF87}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -450,28 +451,19 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8C02C31F-0298-4A5B-A078-E437652DEBCA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0700C228-3D8B-4E51-9B84-18A502BDF8BD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/NI-myRIO-1900-0316a44a/WIFI MODE REMOTE CONTROL/TLB Repository/TLB Native Dynamic Events ver 0.26g.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref"></Property>
-				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref"></Property>
-				<Property Name="Source[4].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[4].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">Ngee Ann Polytechnic</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">TLB Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">TLB Application</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">TLB All Tasks</Property>
+				<Property Name="TgtF_internalName" Type="Str">TLB All Tasks</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2020 Ngee Ann Polytechnic</Property>
-				<Property Name="TgtF_productName" Type="Str">TLB Application</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{4FFE5678-7006-4AC5-A277-0E523F35EFA0}</Property>
+				<Property Name="TgtF_productName" Type="Str">TLB All Tasks</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{DF67C2D4-F34A-40A0-A1FD-1DF2E29CC074}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
