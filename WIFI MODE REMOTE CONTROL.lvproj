@@ -424,23 +424,22 @@ AddOutputFilter chunkFilter
 			<Item Name="States for Action Engine.ctl" Type="VI" URL="../../Labview Training Phase 2/Enum Controls/States for Action Engine.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="TLB All Tasks" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{1D3EB52F-B604-4BCF-A2B7-9DC05DD73F7D}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{13623D1D-BFFE-43C0-9B31-D940D8657B46}</Property>
+			<Item Name="CORE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
+				<Property Name="App_INI_aliasGUID" Type="Str">{F40D9843-34B4-4EB6-B6BF-47BC81A40716}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{317CE459-CC97-4069-A114-1080684D4300}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{B37EB98D-377F-4E7B-A56F-7DBEC83669C4}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">TLB All Tasks</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{8B765B6F-B3D3-43EA-918A-51A46EB7875D}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">CORE</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/TLB All Tasks</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/CORE</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{4C0EF6A3-7C95-4B29-810E-2E467A15FF87}</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{9C7186BE-94AA-4D58-8FB8-D53E842FBF87}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -451,19 +450,19 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0700C228-3D8B-4E51-9B84-18A502BDF8BD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{52C5E233-F7E7-4E23-972B-AF77ECB34B68}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/NI-myRIO-1900-0316a44a/WIFI MODE REMOTE CONTROL/TLB Repository/TLB Native Dynamic Events ver 0.26g.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/NI-myRIO-1900-0316a44a/WIFI MODE REMOTE CONTROL/CORE PROGRAMMING TLB FRAME V1.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">Ngee Ann Polytechnic</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">TLB All Tasks</Property>
-				<Property Name="TgtF_internalName" Type="Str">TLB All Tasks</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">CORE</Property>
+				<Property Name="TgtF_internalName" Type="Str">CORE</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2020 Ngee Ann Polytechnic</Property>
-				<Property Name="TgtF_productName" Type="Str">TLB All Tasks</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{DF67C2D4-F34A-40A0-A1FD-1DF2E29CC074}</Property>
+				<Property Name="TgtF_productName" Type="Str">CORE</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{642C3987-E4CA-4E3E-B7BF-5344DBA18CDD}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
